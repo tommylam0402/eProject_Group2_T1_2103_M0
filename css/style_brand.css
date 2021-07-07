@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+/* Main - page */
+/* .main_page{
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+.main_page img
+{
+    background-image: cover;
+}
+.main_nav{
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+
+.main_page .main_nav .row .menu ul{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 7%;
+}
+.main_page .main_nav .row .menu ul li{
+    float: right;
+    padding-left: 5%;
+}
+.main_page .main_nav .row .menu ul li a{
+    color: white;
+    font-size: 18px;
+}
+.nav{
+    margin: auto;
+}
+.nav .nav_link{
+    list-style: none;
+    text-align: center;
+    margin-left: 50px;
+    position: relative;
+}
+.nav .nav_link > li{
+    float: left;
+    margin: auto;
+    width: 25%;
+    padding:10px 2%;
+    border: solid 1px;
+    background-color: white;
+}
+.nav .nav_link > li > a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav .nav_link > li:hover{
+    background-color: #ccc;
+}
+
+/* Sunglasses */
+ /* .sunglasses-box{
+    position: absolute;
+    width: 40%;
+     opacity: 1;
+    visibility: hidden; 
+    background-color: white;
+    z-index: 1;
+    left: 0px;
+    top: 50px;
+    display: none;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0px 20px;
+}
+.content-box .row header{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.sunglasses-links li{
+    padding-left: 20px;
+}
+.sunglasses-links li a{
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.sunglasses-links li a:hover{
+    text-decoration: none;
+}
+.sunglasses-links{
+    list-style: none;
+}
+.row header{
+    padding-left: 20px;
+}
+.nav .nav_link > li:hover .sunglasses-box{
+    display: block;
+}  */
+/* End Sunglasses */
+
+
+/* Contact Lense */
+.lens-box{
+    position: absolute;
+    width: 40%;
+    /* opacity: 1;
+    visibility: hidden; */
+    background-color:white;
+    z-index: 1;
+    left: 0px;
+    top: 50px;
+    display: none;
+    margin-left: 327px;
+}
+.content-lens-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 45px 20px 20px;
+}
+.content-lens-box .row header{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.lens-links li{
+    padding-left: 20px;
+}
+.lens-links li a{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.lens-links li a:hover{
+    text-decoration: none;
+}
+.lens-links{
+    list-style: none;
+}
+.row header{
+    padding-left: 20px;
+}
+.nav .nav_link > li:hover .lens-box{
+    display: block;
+} */
+
+/* End Contact lens */
+
+/* @media (max-width: 576px) {
+    .nav .nav_link > li{
+        float: none;
+        width: 100%;
+    }
+    .nav_link{
+        margin-left: 0;
+    }
+    .sunglasses-box{
+        position: static;
+        width: 100%;
+        background-color: #ccc;
+    }
+    .content-box{
+        width: 100%;
+    }
+    .lens-box{
+        position: static;
+        width: 100%;
+        margin-left: 0;
+        background-color: #ccc;
+
+    }
+    .content-lens-box{
+        width: 100%;
+    }
+    .content-lens-box .row{
+        margin-left: 0;
+    }
+    .nav .nav_link > li{
+        padding:0;
+    }
+
+}
+@media (min-width: 576px) {
+    .nav .nav_link > li:hover .lens-box{
+        box-shadow: 0px 4px 4px #333;
+    }
+    .nav .nav_link > li:hover .sunglasses-box{
+        box-shadow: 0px 4px 4px #333;
+    }
+} */
+.banner1{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-top:50px;
+    padding-bottom: 50px;
+}
+.banner1 .row .logo_gucci img{
+    margin: auto;
+    display: block;
+}
+.infogucci h3{
+    color: white;
+    font-size: 25px;
+}
+.infogucci p{
+    color: white;
+    opacity: 0.7;
+}
+/* End main-page */
+/* Banner */
+.banner2{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.banner2 img{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+/* End banner */
+
+/* Title */
+.title{
+    font-weight: bold;
+    background-color: #c5edeb;
+    text-align: center;
+}
+/* End Tittle */
+
+/* Infor Product */
+.filter{
+    float: right;
+}
+#filter_product option{
+    cursor: pointer;
+}
+#brand_product{
+    margin-top: 50px;
+}
+.product a img:hover{
+    transition: all 0.5s ease-out;
+    transform: scale(1.1);
+}
+ .name_produc{
+    text-align: center;
+    font-size: 30px;
+}
+ .price_product{
+    text-align: center;
+    font-size: 17px;
+    color: red;
+}
+.hr{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+
+/* End Infor */
+/* Other Brand */
+.other_brand h1{
+    text-align: center;
+    font-weight: bold;
+}
+/* End Other Brand */
+@media (max-width: 576px) {
+    .nav .nav_link > li{
+        float: none;
+        width: 100%;
+    }
+    .nav_link{
+        margin-left: 0;
+    }
+    .sunglasses-box{
+        position: static;
+        width: 100%;
+        background-color: #ccc;
+    }
+    .content-box{
+        width: 100%;
+    }
+    .lens-box{
+        position: static;
+        width: 100%;
+        margin-left: 0;
+        background-color: #ccc;
+
+    }
+    .content-lens-box{
+        width: 100%;
+    }
+    .content-lens-box .row{
+        margin-left: 0;
+    }
+    .nav .nav_link > li{
+        padding:0;
+    }
+    .logo_lascote{
+        height: 104px;
+    }
+    .logo_nike{
+        height: 108px;
+    }
+
+}
+@media (min-width: 576px) {
+    .nav .nav_link > li:hover .lens-box{
+        box-shadow: 0px 4px 4px #333;
+    }
+    .nav .nav_link > li:hover .sunglasses-box{
+        box-shadow: 0px 4px 4px #333;
+    }
+    .logo_lascote{
+        height: 226px;
+    }
+    .logo_nike{
+        height: 210px;
+    }
+}

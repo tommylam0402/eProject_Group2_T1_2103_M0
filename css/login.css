@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+} */
+
+
+/* .login
+{
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+} */
+.form-box
+{
+    width: 380px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+}
+.form-box button
+{
+    font-family: 'Open Sans', sans-serif;
+}
+.form-box span
+{
+    font-family: 'Open Sans', sans-serif;
+}
+.button-box
+{
+    position: relative;
+    margin: 35px auto;
+    border-radius: 30px;
+    width: 220px;
+    box-shadow: 0 0 20px 2px #b3e7ff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.toggle-button
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-weight: bold;
+    font-size: 13px;
+}
+.social-links
+{   
+    font-size: 40px;
+}
+.social-links a
+{   
+    text-decoration: none;
+    padding-left: 20px;
+}
+#btn
+{
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#33beff,#ccefff);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.login-form
+{
+    width: 300px;
+    transition: 0.5s;
+}
+.input-field
+{
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    outline: none;
+    background: transparent;
+    border-radius: 20px;
+}
+.submit-btn
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    border-radius: 30px;
+}
+.input-form
+{
+    top:100px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-bottom: 1px solid;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+#login
+{
+    left: 50px;
+}
+#register
+{
+    left: 450px;
+}
