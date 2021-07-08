@@ -2261,7 +2261,7 @@ function searchProductVi()
         var output = "";
         for(var i in cartArray) {
           output += "<tr>"
-            + "<td>"+"<img src='" + cartArray[i].pic + "' alt='' class=''>"+"</td>"
+            + "<td>"+"<img src='" + cartArray[i].pic + "' alt='' style='width:90%;border-radius:50%'>"+"</td>"
             + "<td>" + cartArray[i].name + "</td>" 
             + "<td>($" + cartArray[i].price + ")</td>"
             + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name='" + cartArray[i].name + "'>-</button>"
