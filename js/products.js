@@ -1614,7 +1614,7 @@ function productsDetailVi()
                                 '</ol>'+
                             '</div>'+
                             '<div class="product-gallery-featured">'+
-                                '<img src="'+v.pic+'" id="mainImg style="width:100%;display:block;margin:auto;">'+
+                                '<img src="'+v.pic+'" id="mainImg" style="width:100%;display:block;margin:auto;">'+
                             '</div>'+
                         '</div>'+
                     '</div>'+
