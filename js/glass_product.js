@@ -1364,7 +1364,7 @@ var shoppingCart = (function() {
     var output = "";
     for(var i in cartArray) {
       output += "<tr>"
-        + "<td>"+"<img src='" + cartArray[i].img + "' alt='' class='cart-img'>"+"</td>"
+        + "<td>"+"<img src='" + cartArray[i].img + "' alt='' style='width:90%;border-radius:50%'>"+"</td>"
         + "<td>" + cartArray[i].name + "</td>" 
         + "<td>($" + cartArray[i].price + ")</td>"
         + "<td><button class='minus-item input-group-addon btn btn-primary' data-name='" + cartArray[i].name + "'>-</button></td>"
