@@ -219,13 +219,13 @@
   a{
     text-decoration: none;
   }
-  /* #testimonials{
+   #testimonials{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width:100%;
-  } */
+}
   .testimonial-heading{
     letter-spacing: 1px;
     margin: 30px 0px;
