@@ -768,18 +768,18 @@ for(var v of glass_product){
 function showBanner(){
     var ban ='';
     if(res1 == 'g'){
-        ban += '<img src="/img/banner/gucci_banner.jpg" alt="">';
+        ban += '<img src="img/banner/gucci_banner.jpg" alt="">';
         $("#banner").html(ban);
     }
     else if(res1 == 'k'){
-        ban += '<img src="/img/banner/calvin_banner.jpg" alt="">';
+        ban += '<img src="img/banner/calvin_banner.jpg" alt="">';
         $("#banner").html(ban);
     }
     else if(res1 == 'l'){
-        ban += '<img src="/img/banner/lascote_banner.jpg" alt="">';
+        ban += '<img src="img/banner/lascote_banner.jpg" alt="">';
         $("#banner").html(ban);
     }else if(res1 == 'n'){
-        ban += '<img src="/img/banner/nike_banner.jpg" alt="">';
+        ban += '<img src="img/banner/nike_banner.jpg" alt="">';
         $("#banner").html(ban);
     }
     
