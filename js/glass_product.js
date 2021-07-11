@@ -1790,3 +1790,19 @@ function zoomImg() {
               }
 
   }
+
+  function contactForm()
+  {
+      var subject = document.getElementsByName('subject');
+      var message = document.getElementsByName('message');
+      if(subject.value == "" || message.value == "")
+      {
+          alert("You should fill the text on input field");
+          return false;
+      }
+      else
+      {
+          alert("Thank you, Your message has sent to our customer services");
+          return true;
+      }
+  }
