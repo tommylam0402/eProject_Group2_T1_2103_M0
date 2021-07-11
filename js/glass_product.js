@@ -1687,7 +1687,7 @@ for(var i of glass_product){
     '                            <p class="lead"><a href="glass_product.html?key1='+i.id+'"><img src="'+i.img+'" alt=""></a></p>\n'+
     '                            <p>'+i.name+'</p>\n'+
     '                            <p><span>'+i.price*24000+'&#8363;'+'</span></p>\n'+
-    '                            <button id="btn_compare" class="btn btn-primary" onclick="showCompareVi(\'' + i.id + '\')">Compare</button>\n'+
+    '                            <button id="btn_compare" class="btn btn-primary" onclick="showCompareVi(\'' + i.id + '\')">So Sánh</button>\n'+
     '                        </div>\n'+
     '                    </div>\n'+
     '';
