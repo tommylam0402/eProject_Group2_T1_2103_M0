@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyeonic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="bootstrap//css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_product.css">
+</head>
+<body onload="javascript:getURL(),showProductVi(),showDirection(),CarouselSimilar(),CompareRightVi(), showModel(), addCart(),changeGlassesTryon(),moveGlasses(),similarCarouselVi()">
+    <div class="container">
+        <div class="nav">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+                    <a href="#" class="navbar-brand">Danh Mục</a>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#cart"><img src="img/cart.png" alt="" width="30px" height="30px"> (<span class="total-count"></span>)</button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kính Mát</a>
+                                <div class="dropdown-menu">
+                                    <a href="glass_brand.html?key1=g" class="dropdown-item">Gucci</a>
+                                    <a href="glass_brand.html?key1=k" class="dropdown-item">Calvin klein</a>
+                                    <a href="glass_brand.html?key1=l" class="dropdown-item">Lacoste</a>
+                                    <a href="glass_brand.html?key1=n" class="dropdown-item">Nike</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kính Áp Tròng</a>
+                                <div class="dropdown-menu">
+                                    <a href="brand.html?key1=a" class="dropdown-item">AirOptix</a>
+                                    <a href="brand.html?key1=c" class="dropdown-item">ChromaView</a>
+                                    <a href="brand.html?key1=e" class="dropdown-item">EyesFusion</a>
+                                    <a href="brand.html?key1=f" class="dropdown-item">FreshLook</a>
+                                </div>
+                            </div>
+                            <a href="ServicePage.html" class="nav-item nav-link">Dịch Vụ</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Liên Hệ</a>
+                                <div class="dropdown-menu">
+                                    <a href="AboutUs.html" class="dropdown-item">Về Chúng Tôi</a>
+                                    <a href="ContactPage.html" class="dropdown-item">Cửa Hàng Chúng Tôi</a>
+                                </div>
+                            </div>            
+                            <a href="login.html" class="nav-item nav-link">Đăng Nhập | Đăng Ký</a>               
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+     <!--Searching Bar Start-->
+     <div class="container">
+        <div class="searching row" style="background-image: url('image/panel/lol.jpg'); width: 100%;height:100%;background-size: 100% 100%;">
+            <img src="image\panel\Eyeconic_Logo.svg" alt="" style="width: 30%;margin: auto;">
+            <div class="searching-box">
+            <input autocompleted type="text" id="search" class="search-input" placeholder="Tìm Thông Tin Sản Phẩm">
+            <button class ="search-btn"onclick="searchP()" title="">Tìm Kiếm</button>
+            <button class ="search-btn"onclick="clearSearch()" title="">Xóa</button>
+            </div>
+        </div>
+    </div>
+    <div id="searchProduct"></div>
+    </div>
+    <!----SearchingBar end-->
+    <div class="dropdown" style="float:right;margin-right: 100px;">
+        <a href="" data-toggle="dropdown">Ngôn Ngữ<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="#" onclick="languageEngProducts()">English</a></li>
+            <li><a href="#" onclick="languageViProducts()">Tiếng Việt</a></li>
+        </ul>
+        </div>
+
+
+
+    <div class="body_page">
+    <div class="container-fluid" id="product_details">
+        <!-- <div class="row">
+            <div class="image col-xs-12 col-md-8 col-lg-8">
+                <div class="row">
+                    <div class="col-xs-2 col-md-2 small_img">
+                        <ul>
+                            <li><img src="/img/GG0636SK.png" alt="" onclick="changeImg('one')" id="one"></li>
+                            <li><img src="/img/GG0831OA.png" alt="" onclick="changeImg('two')" id="two"></li>
+                            <li><img src="/img/prada.png" alt="" onclick="changeImg('three')" id="three"></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-10 col-md-10 main_img">
+                        <img src="/img/armani.png" alt="" id="img_main">
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-md-4 col-lg-4" id="details">
+                <div class="name_product">GUCCI</div>
+                <span class="small_name">GG0636SK</span>
+                <div class="price">Price: <span>$19.99</span></div>
+                <div class="color">Color: <span>Black</span></div>
+                <div class="product_promotion">
+                    <ul>Promotion:
+                        <li>Buy One Get One Free</li>
+                        <li>30% Off Entire Order</li>
+                    </ul>
+                </div>
+                <button id="btn_buy">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-xs-12">
+                <h2>Details</h2>
+                <div class="details_product">
+                    <ul class="left">
+                        <li><b>SKU: </b>SUP1037</li>
+                        <li><b>Frame: </b> Full</li>
+                        <li><b>Shape: </b> Tiger Eye</li>
+                        <li><b>Weight: </b> 27.4g(0.97 oz)</li>
+                    </ul>
+                    <ul class="right">
+                        <li><b>Gender:</b> Women</li>
+                        <li><b>Material: </b> TR90 | Acetate</li>
+                        <li><b>Progressive: </b> Yes</li>
+                    </ul>
+                </div>
+                <span>Description</span>
+                <p>It is all about class in these Joa sunglasses. The large-sized cat-eye shape will add instant retro charm to your ensemble, finishing off your look with pure sophistication. Elegant and effortless, they have a true city-chic vibe. Made from TR90, slide them on for a lightweight and durable fit for your commute, your weekend, or days spent in the sun.</p>
+                <a href="" download="">Click here to download details of product</a>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12">
+                <div class="vector_product">
+                    <div class="p1">
+                        <span>Frame Width</span><br>
+                        <span>142 mm</span>
+                    </div>
+                    <div class="p2">
+                        <span>Lens Width</span><br>
+                        <span>52 mm</span>
+                    </div>
+                    <div class="p3">
+                        <span>Lense Height</span><br>
+                        <span>43.3 mm</span>
+                    </div>
+                    <div class="p4">
+                        <span>Brigde</span><br>
+                        <span>18 mm</span>
+                    </div>
+                    <div class="p5">
+                        <span>Diagonal 43 mm</span>
+                    </div>
+                    <div class="p6">
+                        <span>Temple Length 145 mm</span>
+                    </div>
+                <img style="width:100%" src="https://d22qih3asjv3x0.cloudfront.net/1/static/public/statics/images/product-gudvue/glasses-infos.png" alt="">
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="container-fluid model" style="margin-top: 50px;" id="model" >
+        <!-- <div class="row">
+            <div class="col-xs-6">
+                <img src="img//Model/Uvalde1.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="col-xs-6">
+                <img src="img//Model/Uvalde2.jpg" alt="" style="width:100%;">
+            </div>
+        </div> -->
+    </div>
+        <div class="container">
+            <h1 style="text-align: center;">SẢN PHẨM TƯƠNG TỰA</h1>
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                <div class="MultiCarousel-inner" id="carousel">
+                    <!-- <div class="item">
+                        <div class="pad15" style="text-align: center;">
+                            <p class="lead"><a href="glass_product.html?key1=g01"><img src="img//Gucci/1_gucci.jpg" alt=""></a></p>
+                            <p>Moria</p>
+                            <p>$<span>29.5</span></p>
+                            <button id="btn_compare" class="btn btn-primary" onclick="compare()">Compare</button>
+                        </div>
+                    </div> -->
+                </div>
+                <button class="btn btn-primary leftLst"><i class="fas fa-angle-left"></i></button>
+                <button class="btn btn-primary rightLst"><i class="fas fa-angle-right"></i></button>
+               </div> 
+        </div> 
+
+    <div class="container compare_product">
+        <h1 style="text-align: center;">SO SÁNH SẢN PHẨM</h1>
+        <div class="row" id="compare">
+            <div class="col-xs-6 left" id="left">
+                <!-- <a href=""><img src="img//Gucci/1_gucci.jpg" alt="" style="width: 50%"></a>
+                <p>Name : <span>Moria</span></p>
+                <p>Price: <span>$29.5</span></p>
+                <p>Color: <span>Black</span></p>
+                <p>SKU: <span>SUP1077</span></p>
+                <p>Frame: <span>Full</span></p>
+                <p>Shape: <span>Classic Wayframe</span></p>
+                <p>Weight: <span>13.1g (0.46 oz)</span></p>
+                <p>Gender: <span>Women | Men</span></p>
+                <p>Material: <span>Metal</span></p>
+                <p>Progressive: <span>Yes</span></p>
+                <p>Frame Width: <span>141 mm</span></p>
+                <p>Lens Width: <span>52mm</span></p>
+                <p>Lense Heigh: <span>43mm</span></p>
+                <p>Brigde: <span>20mm</span></p>
+                <p>Diagonal: <span>20 mm</span></p>
+                <p>Temple Length: <span>146 mm</span></p> -->
+            </div>
+            <div class="col-xs-6 " id="right">
+            </div>
+        </div>
+    </div>
+    <div class="container rewview">
+        <h2>Cảm nhận về sản phẩm</h2>
+        <div class="row">
+        <div class="submit_review col-xs-12 col-md-4">
+            <form action="" onsubmit="return showComment()">
+                <label for="name_user">Tên:</label><br>
+                <input type="text" id="name_user" required placeholder="Nhập tên của bạn"><br>
+                <div class="rate"> 
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+                <br><br><br>
+                <textarea id="review_user" cols="30" rows="5" "></textarea><br>
+               <button type="submit" class="btn btn-primary" value="Review" id="btn_review">Gửi</button>
+            </form>
+        </div>
+        <div id="show_comment"class="show_review col-xs-12 col-md-8" style="border:solid 1px; height: 200px;overflow: scroll;">
+        </div>
+    </div>
+    </div>
+
+        <div class="other_brand container">
+            <h1>Thương Hiệu Yêu Thích</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                    <a href="glass_brand.html?key1=l"><img src="img/lacoste_logo.png" style="width: 80%;height: auto;" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                    <a href="glass_brand.html?key1=k"><img src="img/Calvin-Klein-Logo-1992.jpg" style="width: 80%;height: auto;" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                    <a href="glass_brand.html?key1=g"><img src="img/gucci-logo.jpg" style="width: 80%;height: auto;" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                    <a href="glass_brand.html?key1=n"><img src="img/nike_logo.png" style="width: 80%;height: auto;" alt=""></a>
+                </div>
+            </div>
+        </div>
+    <!-- Tryon-->
+    <div id="tryon-outer">
+        <!-- <div class="list-img-tryon">
+             <div class="close" style="text-align: center;"><i class="fas fa-times" onclick="offTryon()"></i></div>
+             <div class="img-list">
+                 <div class="imgs-main">
+                     <div class="up-img">
+                        <img src="img/1-model-1.jpg" alt="" style="width:100%" id="imgMask">
+                        <div class="imgContainer">
+                            <div class="imgGlass">
+                            <img src="/img/sup1040.png" alt="" style="width:200px">
+                            </div>
+                        </div>
+                     </div>
+                     <div class="down-img">
+                        <ul>
+                            <li><img src="img/1-model-1.jpg" alt="" onclick="changeTryon('one1')" id="one1"></li>
+                            <li><img src="img/2-model-5.jpg" alt="" onclick="changeTryon('two1')" id="two1"></li>
+                            <li><img src="img/7-model-3.jpg" alt="" onclick="changeTryon('three1')" id="three1"></li>
+                            <li><img src="img/8-model-7.jpg" alt="" onclick="changeTryon('four1')" id="four1"></li>
+                            <li><img src="img/9-model-9.jpg" alt="" onclick="changeTryon('five1')" id="five1"></li>
+                            <li><img src="img/10-model-10.jpg" alt="" onclick="changeTryon('six1')" id="six1"></li>
+                        </ul>
+                     </div>
+                 </div>
+             </div>
+        </div> -->
+    </div>
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container">
+        <div class="footer">       
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Liên Lạc Chúng Tôi</h2>
+                            <div class="contact-info">
+                                <p>MON-FRI 9AM - 5PM</p>
+                                <p><i class="fa fa-map-marker"></i>123 Eyeonic Store, L A, Vietnam</p>
+                                <p><i class="fa fa-envelope"></i>: eyeonicstore@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>: 1.800.556.926</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Theo Dõi Chúng Tôi</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Thông Tin Công Ty</h2>
+                            <ul>
+                                <li><a href="AboutUs.html">Về Chúng Tôi</a></li>
+                                <li><a href="ContactPage.html">Cửa Hàng Chúng Tôi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Services</h2>
+                            <ul>
+                                <li><a href="Virtualshop.html">Mua Sắm Trực Tuyến</a></li>
+                                <li><a href="Optionshop.html">Lựa Chọn Mua Sắm</a></li>
+                                <li><a href="Promises.html">Cam Kết</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                        <div class="payment-method">
+                            <h2>Chúng Tôi Chấp Nhận Thanh Toán:</h2>
+                            <img src="img/payment-method.png" alt="Payment Method" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="payment-security">
+                            <h2>Bảo Mật Bằng:</h2>
+                            <img src="img/godaddy.svg" alt="Payment Security" />
+                            <img src="img/norton.svg" alt="Payment Security" />
+                            <img src="img/ssl.svg" alt="Payment Security" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 copyright">
+                            <p  style="text-align: center;">Copyright &copy; By Group 2 Class T1-M0-2103. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- Footer End -->
+
+        <!-- Form -->
+ <!-- Form -->
+    <!-- Form -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Shopping Cart</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart col-xs-12 col-12">
+                
+              </table>
+              <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer" onsubmit="return false">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" onclick ="openForm()" class="btn btn-primary">Order now</button>
+              <button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
+          </div>
+        </div>
+    
+          <!-- Form -->
+        <div class="container-order"  id="form" style="margin-left: 10%;">
+        <form class = "order-form" action="index.html" id="paymentform" onsubmit="return validatedPaymentForm()"> 
+          <div class="row">
+            <div class="col-50">
+                <button class="closeform" onclick="closeForm()" style="width:25px;cursor: pointer;">X</button>
+              <h3>Billing Address</h3>
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+              <label for="ccnum">Credit card number</label>
+              <input autocomplete="off" type="text" id="ccnum" name="cardnumber" class="input-lg form-control ccnum" placeholder="1111-2222-3333-4444" pattern="^[1-9]{12,0}">
+              <div id="cardnumber_error"><span style="color: red;">Card Number should have 12 number</span></div>
+              <label for="expmonth">Expire Day</label>
+              <input autocomplete="off" type="text" id="expmonth" name="expmonth" class="input-lg form-control expmonth" autocomplete="expmonth" placeholder="**/**" pattern="^[1-9]{2,0}/[1-9]{2,0}">
+              <div id="exp_error"><span style="color: red;">Date expire should be month/year</span></div>
+              <label for="cvv">CVV</label>
+              <input autocomplete="off" type="text" id="cvv" name="cvv" class="input-lg form-control cvv" autocomplete="cvv" placeholder="3 digit number" pattern="^[1-9]{3,0}">
+              <div id="cvv_error"><span style="color: red;">CCV is 3 legit number behind the card</span></div>
+              <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <div id="correctForm" onsubmit="return false" class = "error"></div>
+          <button type="submit" value="Continue to checkout" class="btn">Payment</button>
+        </form>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/glass_product.js"></script>
+    <script src="js/zoomsl.min.js"></script> 
+    <script src="js/searchProduct.js"></script> 
+    <script src="js/index.js"></script>
+</body>
+</html>

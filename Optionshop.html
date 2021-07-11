@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyeonic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Eyeonic Store - Group 2- T1.2103.M0" name="keywords">
+        <meta content="Eyeonic Store - Group 2- T1.2103.M0" name="description">
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="bootstrap//css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_product.css">
+    <link href="css/optionshop.css" rel="stylesheet">
+
+</head>
+<body onload="javascript:addCart()">
+	<div class="container">
+		<div class="nav">
+				<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+					<a href="#" class="navbar-brand">MENU</a>
+					<button type="button" class="btn-cart" data-toggle="modal" data-target="#cart"><img src="img/cart.png" alt="" width="30px" height="30px"> (<span class="total-count"></span>)</button>
+					<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+						<div class="navbar-nav">
+							<a href="index.html" class="nav-item nav-link active">Home</a>
+							<div class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUNGLASESS</a>
+								<div class="dropdown-menu">
+									<a href="glass_brand.html?key1=g" class="dropdown-item">Gucci</a>
+									<a href="glass_brand.html?key1=k" class="dropdown-item">Calvin klein</a>
+									<a href="glass_brand.html?key1=l" class="dropdown-item">Lacoste</a>
+									<a href="glass_brand.html?key1=n" class="dropdown-item">Nike</a>
+								</div>
+							</div>
+							<div class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CONTACT LENSES</a>
+								<div class="dropdown-menu">
+									<a href="brand.html?key1=a" class="dropdown-item">AirOptix</a>
+									<a href="brand.html?key1=c" class="dropdown-item">ChromaView</a>
+									<a href="brand.html?key1=e" class="dropdown-item">EyesFusion</a>
+									<a href="brand.html?key1=f" class="dropdown-item">FreshLook</a>
+								</div>
+							</div>
+							<a href="ServicePage.html" class="nav-item nav-link">SERVICES</a>
+							<div class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CONTACT US</a>
+								<div class="dropdown-menu">
+									<a href="AboutUs.html" class="dropdown-item">About Us</a>
+									<a href="ContactPage.html" class="dropdown-item">Our Stores</a>
+								</div>
+							</div>            
+							<a href="login.html" class="nav-item nav-link">SIGN IN | SIGN UP</a>               
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+             <!--Searching Bar Start-->
+     <div class="container">
+        <div class="searching row" style="background-image: url('image/panel/lol.jpg'); width: 100%;height:100%;background-size: 100% 100%;">
+            <img src="image\panel\Eyeconic_Logo.svg" alt="" style="width: 30%;margin: auto;">
+            <div class="searching-box">
+            <input autocompleted type="text" id="search" class="search-input" placeholder="Search Product You Need">
+            <button class ="search-btn"onclick="searchP()" title="">Search</button>
+            <button class ="search-btn"onclick="clearSearch()" title="">Clear</button>
+            </div>
+        </div>
+    </div>
+    <div id="searchProduct"></div>
+    </div>
+    <!----SearchingBar end-->
+
+
+	<div class="container">
+			<!-- ******1******* -->
+			<h1 class="yo1">Pick Up in Store <img src="lgimage/Icons_pickup.webp"><img src="lgimage/ShoppingYourWay.jpg"></h1>
+			<h6 class="yo2">There’s a new service in town: select your convenient pickup store,
+			most in-stock items are available for pickup in just 2 business hours!<br>
+			Just follow these simple steps:</h4>
+			<br> 
+			<div class="process-wrapper">
+			<div id="progress-bar-container">
+				<ul>
+					<li class="step step01 active"><div class="step-inner">A</div></li>
+					<li class="step step02"><div class="step-inner">B</div></li>
+					<li class="step step03"><div class="step-inner">C</div></li>
+				</ul>
+				
+				<div id="line">
+					<div id="line-progress"></div>
+				</div>
+			</div>
+
+			<div id="progress-content-section">
+				<div class="section-content discovery active">
+					<h2>STEP 1<i class="fas fa-arrow-right"></i></h2>
+					<p>Select your favourite frame online and select ‘Pickup in store’ in the cart, it’s free.</p>
+				</div>
+				
+				<div class="section-content strategy">
+					<h2>STEP 2<i class="fas fa-arrow-right"></i></h2>
+					<p>Select your convenient pickup store and check opening hours,
+				most in-stock items are available for pickup in 2h!*
+
+				</p>
+				</div>
+				
+				<div class="section-content creative">
+					<h2>STEP 3</h2>
+					<p>Proceed to checkout, we’ll let you know as soon as
+				your pair is available for collection. No payment request in store.</p>
+				</div>
+				</div>
+			<h6 class="yo2">*While stocks last. In-stock items available for same day pickup are marked as ‘COLLECT TODAY’: they will be ready for you in just 2 business hours,
+			including weekends. Orders will be kept in the store for up to 1 week for pick-up.
+			Items not in stock are still eligible for free pickup in store,
+			you can select your convenient location and we will ship a fresh pair in express shipping.</h6>
+			<!-- *****2******** -->
+			<h1 class="yo1">Find in store<img src="lgimage/icon_findstore.webp"><img src="lgimage/instore.jpg"></h1>
+			<h6 class="yo2">Want to check if your style is available at a store near you?
+			Just follow these simple steps:</h4>
+			<br> 
+			<div class="process-wrapper">
+			<div id="progress-bar-container">
+				<ul>
+					<li class="step step01 active"><div class="step-inner">A</div></li>
+					<li class="step step02"><div class="step-inner">B</div></li>
+					<li class="step step03"><div class="step-inner">C</div></li>
+				</ul>
+				
+				<div id="line">
+					<div id="line-progress"></div>
+				</div>
+			</div>
+
+			<div id="progress-content-section">
+				<div class="section-content discovery active">
+					<h2>Step 1<i class="fas fa-arrow-right"></i></h2>
+					<p>Browse our styles online and select your favorite shades</p>
+				</div>
+				
+				<div class="section-content strategy">
+					<h2>Step 2<i class="fas fa-arrow-right"></i></h2>
+					<p>Click ‘Find In Store’ button and search for nearest stores</p>
+				</div>
+				
+				<div class="section-content creative">
+					<h2>Step 3</h2>
+					<p>See in-stock stores near you, if you want call to reserve your pair, then come to visit us*!</p>
+				</div>
+				</div>
+			<h6 class="yo2">*While stocks last. In store availability can be confirmed only when in store. Want to be sure?
+			Call our store and ask for 1 day reservation.</h6>
+			
+			<!-- *****3****** -->
+			<h1 class="yo1">Call and Reserve<img src="lgimage/icon_call_reserve (1).webp"><img src="lgimage/phone.png"></h1>
+			<h6 class="yo2">Want to check if your style is available at a store near you?
+			Just follow these simple steps:</h6>
+			<br> 
+			<div class="process-wrapper">
+			<div id="progress-bar-container">
+				<ul>
+					<li class="step step01 active"><div class="step-inner">A</div></li>
+					<li class="step step02"><div class="step-inner">B</div></li>
+					<li class="step step03"><div class="step-inner">C</div></li>
+				</ul>
+				
+				<div id="line">
+					<div id="line-progress"></div>
+				</div>
+			</div>
+
+			<div id="progress-content-section">
+				<div class="section-content discovery active">
+					<h2>Step 1<i class="fas fa-arrow-right"></i></h2>
+					<p>Browse our styles online and select your favorite shades</p>
+				</div>
+				
+				<div class="section-content strategy">
+					<h2>Step 2<i class="fas fa-arrow-right"></i></h2>
+					<p>Click ‘Find In Store’ button and search for nearest stores</p>
+				</div>
+				
+				<div class="section-content creative">
+					<h2>Step 3</h2>
+					<p>Call our stores and communicate product code, we’ll be happy<br>
+				to confirm availability and keep the product for you to come and try in store*.</p>
+				</div>
+				</div>
+			</div>
+			<h4 class="yo2">Join Eyeonic's Club</h4>
+			<h6 class="yo2">(Subscribe to our newsletter and get exclusive access to the latest trends,
+			sales and special offers).</h6>
+		</div>
+
+	</div>
+</div>
+
+
+
+<!-- Footer Start -->
+<div class="container">
+    <div class="footer">       
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Get in Touch</h2>
+                        <div class="contact-info">
+                            <p>MON-FRI 9AM - 5PM</p>
+                            <p><i class="fa fa-map-marker"></i>123 Eyeonic Store, L A, Vietnam</p>
+                            <p><i class="fa fa-envelope"></i>: eyeonicstore@gmail.com</p>
+                            <p><i class="fa fa-phone"></i>: 1.800.556.926</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Follow Us</h2>
+                        <div class="contact-info">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Company Info</h2>
+                        <ul>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="ContactPage.html">Our Stores</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Services</h2>
+                        <ul>
+                            <li><a href="Virtualshop.html">Virtual Shopping</a></li>
+                            <li><a href="Optionshop.html">Options'Shopping</a></li>
+                            <li><a href="Promises.html">Promises</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row payment align-items-center">
+                <div class="col-md-6">
+                    <div class="payment-method">
+                        <h2>We Accept:</h2>
+                        <img src="img/payment-method.png" alt="Payment Method" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="payment-security">
+                        <h2>Secured By:</h2>
+                        <img src="img/godaddy.svg" alt="Payment Security" />
+                        <img src="img/norton.svg" alt="Payment Security" />
+                        <img src="img/ssl.svg" alt="Payment Security" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 copyright">
+                        <p  style="text-align: center;">Copyright &copy; By Group 2 Class T1-M0-2103. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- Footer End -->
+
+
+
+<!-- Form -->
+   <!-- Form -->
+   <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">Shopping Cart</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart col-xs-12 col-12">
+            
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer" onsubmit="return false">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" onclick ="openForm()" class="btn btn-primary">Order now</button>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+
+      <!-- Form -->
+    <div class="container-order"  id="form" style="margin-left: 10%;">
+    <form class = "order-form" action="index.html" id="paymentform" onsubmit="return validatedPaymentForm()"> 
+      <div class="row">
+        <div class="col-50">
+            <button class="closeform" onclick="closeForm()" style="width:25px;cursor: pointer;">X</button>
+          <h3>Billing Address</h3>
+          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+          <input type="text" id="email" name="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+          <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+        <div class="col-50">
+          <h3>Payment</h3>
+          <label for="fname">Accepted Cards</label>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div>
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+          <label for="ccnum">Credit card number</label>
+          <input autocomplete="off" type="text" id="ccnum" name="cardnumber" class="input-lg form-control ccnum" placeholder="1111-2222-3333-4444" pattern="^[1-9]{12,0}">
+          <div id="cardnumber_error"><span style="color: red;">Card Number should have 12 number</span></div>
+          <label for="expmonth">Expire Day</label>
+          <input autocomplete="off" type="text" id="expmonth" name="expmonth" class="input-lg form-control expmonth" autocomplete="expmonth" placeholder="**/**" pattern="^[1-9]{2,0}/[1-9]{2,0}">
+          <div id="exp_error"><span style="color: red;">Date expire should be month/year</span></div>
+          <label for="cvv">CVV</label>
+          <input autocomplete="off" type="text" id="cvv" name="cvv" class="input-lg form-control cvv" autocomplete="cvv" placeholder="3 digit number" pattern="^[1-9]{3,0}">
+          <div id="cvv_error"><span style="color: red;">CCV is 3 legit number behind the card</span></div>
+          <label>
+        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+      </label>
+      <div id="correctForm" onsubmit="return false" class = "error"></div>
+      <button type="submit" value="Continue to checkout" class="btn">Payment</button>
+    </form>
+  </div>
+</div>
+
+
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/products.js"></script>
+<script src="js/glass_product.js"></script>
+<script src="js/searchProduct.js"></script> 
+<script src="js/index.js"></script>
+</body>
+</html>

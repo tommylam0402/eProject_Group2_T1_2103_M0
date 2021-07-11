@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyeonic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Eyeonic Store - Group 2- T1.2103.M0" name="keywords">
+        <meta content="Eyeonic Store - Group 2- T1.2103.M0" name="description">
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="bootstrap//css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <!-- <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_product.css">
+    <link rel="stylesheet" href="css/servicepage.css">
+
+</head>
+<body onload="javascript:addCart()">
+    <div class="container">
+        <div class="nav">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#cart"><img src="img/cart.png" alt="" width="30px" height="30px"> (<span class="total-count"></span>)</button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUNGLASESS</a>
+                                <div class="dropdown-menu">
+                                    <a href="glass_brand.html?key1=g" class="dropdown-item">Gucci</a>
+                                    <a href="glass_brand.html?key1=k" class="dropdown-item">Calvin klein</a>
+                                    <a href="glass_brand.html?key1=l" class="dropdown-item">Lacoste</a>
+                                    <a href="glass_brand.html?key1=n" class="dropdown-item">Nike</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CONTACT LENSES</a>
+                                <div class="dropdown-menu">
+                                    <a href="brand.html?key1=a" class="dropdown-item">AirOptix</a>
+                                    <a href="brand.html?key1=c" class="dropdown-item">ChromaView</a>
+                                    <a href="brand.html?key1=e" class="dropdown-item">EyesFusion</a>
+                                    <a href="brand.html?key1=f" class="dropdown-item">FreshLook</a>
+                                </div>
+                            </div>
+                            <a href="ServicePage.html" class="nav-item nav-link">SERVICES</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CONTACT US</a>
+                                <div class="dropdown-menu">
+                                    <a href="AboutUs.html" class="dropdown-item">About Us</a>
+                                    <a href="ContactPage.html" class="dropdown-item">Our Stores</a>
+                                </div>
+                            </div>            
+                            <a href="login.html" class="nav-item nav-link">SIGN IN | SIGN UP</a>               
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+
+     <!--Searching Bar Start-->
+     <div class="container">
+        <div class="searching row" style="background-image: url('image/panel/lol.jpg'); width: 100%;height:100%;background-size: 100% 100%;">
+            <img src="image\panel\Eyeconic_Logo.svg" alt="" style="width: 30%;margin: auto;">
+            <div class="searching-box">
+            <input autocompleted type="text" id="search" class="search-input" placeholder="Search Product You Need">
+            <button class ="search-btn"onclick="searchP()" title="">Search</button>
+            <button class ="search-btn"onclick="clearSearch()" title="">Clear</button>
+            </div>
+        </div>
+    </div>
+    <div id="searchProduct"></div>
+    </div>
+    <!----SearchingBar end-->
+    <!-- /*Our <Service></Service> -->
+    <div class="banner2">
+        <img src="lgimage/logo16.jpg" style="width:100%" alt="">
+    </div>
+
+
+  <div class="services container">
+            <div class="box">
+                <div class="icon"><i class="fas fa-headset"></i></div>
+                <div class="kontent">
+                    <h3>Virtual Shopping Consultation</h3>
+                    <p>Meet our personal shopper who will guide you through
+                    through the newest trends and will help you find the frame taht  best fits your style.</p>
+                    <a class="a1" href="Virtualshop.html">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+            <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="kontent">
+                <h3>Options'Shopping</h3>
+                <p>Choose Your Ways To Shopping</p>
+                <a class="a1" href="Optionshop.html">Read More</a>
+            </div>
+        </div>
+
+        <!-- <div class="box">
+            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+            <div class="kontent">
+                <h3>Free And Easy Return</h3>
+                <p>Return In Via Mail Or In Store Within 3O Days.</p>
+                <a class="a1" href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icon"><i class="fas fa-magic"></i></div>
+            <div class="kontent">
+                <h3>Customization services</h3>
+                <p>A One Of A Style,Designed By You.
+                Visit A Participating Store And Customize Yours Today.</p>
+                <a class="a1" href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icon"><i class="fas fa-bullhorn"></i></div>
+            <div class="kontent">
+                <h3>Notifications</h3>
+                <p> Where You Can Know All Of Our News And Events.</p>
+                <a class="a1" href="#">Read More</a>
+            </div>
+        </div> -->
+
+        <div class="box">
+            <div class="icon"> <i class="fas fa-balance-scale"></i></div>
+            <div class="kontent">
+                <h3>Our Perfect Pair Promise</h3>
+                <p>Where We Keeping Our Promises With Customers.</p>
+                <a class="a1" href="Promises.html">Read More</a>
+            </div>
+        </div>
+
+    </div>
+
+
+      <!-- Our ClienTS-->
+
+     <div class="client-wrap">
+        <h1 style="color: orangered;" class="border1"><i class="fab fa-black-tie"></i>OUR CLIENTS</h1>
+    
+        <div class="border1">
+        <div class="client-in">
+           <ul>
+               <li><img src="lgimage/channel.png" alt="">
+                   <img src="lgimage/channel2.jpg" alt="">                
+               </li>
+    
+               <li><img src="lgimage/boss.png" alt="">
+                   <img src="lgimage/boss2.jpg" alt="">                
+               </li>
+    
+               <li><img src="lgimage/br.jpg" alt="">
+                   <img src="lgimage/br2.jpg" alt="">                
+               </li>
+    
+               <li><img src="lgimage/dior.png" alt="">
+                   <img src="lgimage/dior2.jpg" alt="">                
+               </li>
+    
+               <li><img src="lgimage/gucci.jpg" alt="">
+                   <img src="lgimage/gucci2.jpg" alt="">                
+               </li>
+    
+               <li><img src="lgimage/prada.jpg" alt="">
+                   <img src="lgimage/prada2.jpg" alt="">                
+               </li>
+    
+               <li><img src="lgimage/rb.png" alt="">
+                   <img src="lgimage/rb2.png" alt="">                
+               </li>
+    
+               <li><img src="lgimage/vs4.png" alt="">
+                   <img src="lgimage/vs2.jpg" alt="">                
+               </li>
+
+               <li><img src="lgimage/am.png" alt="">
+                <img src="lgimage/am2.jpg" alt="">                
+               </li>
+
+               <li><img src="lgimage/bl.png" alt="">
+                <img src="lgimage/bl2.jpg" alt="">                
+               </li>
+
+               <li><img src="lgimage/mk.jpg" alt="">
+                <img src="lgimage/mk2.jpg" alt="">                
+               </li>
+
+               <li><img src="lgimage/dg.jpg" alt="">
+                <img src="lgimage/dg2.jpg" alt="">                
+               </li>
+
+               <li><img src="lgimage/ak.jpg" alt="">
+                <img src="lgimage/ak2.jpg" alt="">                
+               </li>
+
+               <li><img src="lgimage/vouge.png" alt="">
+                <img src="lgimage/vouge2.jpg" alt="">                
+               </li>
+           </ul>
+       </div>
+       </div>
+    </div>
+    <!-- /*Our Team*/ -->
+    <!-- Review of Customer -->
+ <!--Testimonials------------------->
+    <section id="testimonials">
+
+    <!--heading--->
+    <div class="testimonial-heading">
+        <span>Comments</span>
+        <h1>What People Says About Us</h1>
+    </div>
+    <!--testimonials-box-container------>
+    <div class="testimonial-box-container">
+        <!--BOX-1-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="lgimage/bat.jpg" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Justin Biber</strong>   
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p  style="text-align: center;">"i really enjoyed styling these glasses. The design is very sleek and gives me good clarity.
+                 It's super light and the anti-reflective coating is total bliss to my eyes"</p>
+            </div>
+        </div>
+        <!--BOX-2-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="lgimage/trump.jpg" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Donald.J.Trump</strong>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>"Love Eyeonic glasses! Stylish and sturdy."</p>
+            </div>
+        </div>
+         <!--BOX-3-------------->
+         <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="lgimage/logo16.jpg" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Garima Chaurasia</strong>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>"I am impressed with the massive collection at Eyeonic eyewear.
+                 Finding the right pair for my face shape was super fun and easy"</p>
+            </div>
+        </div>
+         <!--BOX-2-------------->
+         <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="lgimage/Ar.webp" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Aishwarya Rai</strong>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>"Absolutely love the variety on Eyeonic website, great eyewear"</p>
+            </div>
+        </div>
+        <!--BOX-3-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="lgimage/ronaldo.jpg" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Cristiano Ronaldo</strong>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>"Eyeonic makes some of the most stylish eyewaer.
+                 Their quality considering their prices is unmathched in Viet Nam, truly my go-to brand for eyewear"</p>
+            </div>
+        </div>
+        <!--BOX-4-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="lgimage/messi.jpg" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Lionel Messi</strong>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>"Absolutely brilliant. No one more words can describe about this awesome brand any more."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+            <!-- /*Search Box*/ -->
+            <!-- Register for News -->
+            <form name="rform" action="#" method="POST" onsubmit="return validate();">
+                <div class="kkontainer">
+                <h1>Register For New Letters(<i class="fas fa-mail-bulk"></i>)</h1>
+                <p>Please fill in this form.</p>
+                <hr>
+            
+                <label for="psw"><b>Email</b></label>
+                <input type="text" placeholder="abc@mail.com" name="email" id="email" >
+            
+
+                <button  type="submit" class="registerbtn">Register</button>
+                
+                
+                <div class="kkontainer signin">
+                <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+                </div>
+
+                </div>
+            </form>
+                <!-- Hotline popup -->
+  
+                <div class="hotline-phone-ring-wrap">
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle">
+                    <a href="tel:0987654321" class="pps-btn-img">
+                        <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+                    </a>
+                    </div>
+                </div>
+                <div class="hotline-bar">
+                    <a href="tel:0987654321">
+                        <span class="text-hotline">Call Us</span>
+                    </a>
+                </div>
+                </div>
+                <!-- Package -->
+
+                <h2 style="text-align:center">Customer Benefit Packages(<i class="fas fa-box-open"></i>)</h2>
+                <p style="text-align:center">Choose The Package That You Like.</p>
+                <div class="package-service">
+                    <div class="package-service-colum">
+                        <div class="columnss">
+                            <ul class="price">
+                            <li class="headerr" style="background-color: blueviolet;">Basic</li>
+                            <li class="grey">$ 9.99 / year</li>
+                            <li>10 Coupons</li>
+                            <li>0 Free Frames</li>
+                            <li>2 Free Cleaning</li>
+                            <li>1 Freeshipping</li>
+                            <li class="grey"><a href="login.html" class="buttonnn">Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="package-service-colum">
+                        <div class="columnss">
+                            <ul class="price">
+                            <li class="headerr" style="background-color:#04AA6D">Pro</li>
+                            <li class="grey">$ 24.99 / year</li>
+                            <li>15 Coupons</li>
+                            <li>1 Free Frams</li>
+                            <li>3 Free Cleaning</li>
+                            <li>2 Freeshipping</li>
+                            <li class="grey"><a href="login.html" class="buttonnn">Sign Up</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                    <div class="package-service-colum">
+                        <div class="columnss">
+                            <ul class="price">
+                            <li class="headerr" style=" background-color: crimson;">Premium</li>
+                            <li class="grey">$ 49.99 / year</li>
+                            <li>25 Coupons</li>
+                            <li>2 Free Frames</li>
+                            <li>5 Free Cleaning</li>
+                            <li>5 Freeshipping</li>
+                            <li class="grey"><a href="login.html" class="buttonnn">Sign Up</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+   <!-- Footer Start -->
+   <div class="container">
+    <div class="footer">       
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Get in Touch</h2>
+                        <div class="contact-info">
+                            <p>MON-FRI 9AM - 5PM</p>
+                            <p><i class="fa fa-map-marker"></i>123 Eyeonic Store, L A, Vietnam</p>
+                            <p><i class="fa fa-envelope"></i>: eyeonicstore@gmail.com</p>
+                            <p><i class="fa fa-phone"></i>: 1.800.556.926</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Follow Us</h2>
+                        <div class="contact-info">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Company Info</h2>
+                        <ul>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="ContactPage.html">Our Stores</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Services</h2>
+                        <ul>
+                            <li><a href="Virtualshop.html">Virtual Shopping</a></li>
+                            <li><a href="Optionshop.html">Options'Shopping</a></li>
+                            <li><a href="Promises.html">Promises</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row payment align-items-center">
+                <div class="col-md-6">
+                    <div class="payment-method">
+                        <h2>We Accept:</h2>
+                        <img src="img/payment-method.png" alt="Payment Method" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="payment-security">
+                        <h2>Secured By:</h2>
+                        <img src="img/godaddy.svg" alt="Payment Security" />
+                        <img src="img/norton.svg" alt="Payment Security" />
+                        <img src="img/ssl.svg" alt="Payment Security" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 copyright">
+                        <p>Copyright &copy; By Group 2 Class T1-M0-2103. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- Footer End -->
+
+<!-- Form -->
+   <!-- Form -->
+   <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">Shopping Cart</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart col-xs-12 col-12">
+            
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer" onsubmit="return false">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" onclick ="openForm()" class="btn btn-primary">Order now</button>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+
+      <!-- Form -->
+    <div class="container-order"  id="form" style="margin-left: 10%;">
+    <form class = "order-form" action="index.html" id="paymentform" onsubmit="return validatedPaymentForm()"> 
+      <div class="row">
+        <div class="col-50">
+            <button class="closeform" onclick="closeForm()" style="width:25px;cursor: pointer;">X</button>
+          <h3>Billing Address</h3>
+          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+          <input type="text" id="email" name="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+          <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+        <div class="col-50">
+          <h3>Payment</h3>
+          <label for="fname">Accepted Cards</label>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div>
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+          <label for="ccnum">Credit card number</label>
+          <input autocomplete="off" type="text" id="ccnum" name="cardnumber" class="input-lg form-control ccnum" placeholder="1111-2222-3333-4444" pattern="^[1-9]{12,0}">
+          <div id="cardnumber_error"><span style="color: red;">Card Number should have 12 number</span></div>
+          <label for="expmonth">Expire Day</label>
+          <input autocomplete="off" type="text" id="expmonth" name="expmonth" class="input-lg form-control expmonth" autocomplete="expmonth" placeholder="**/**" pattern="^[1-9]{2,0}/[1-9]{2,0}">
+          <div id="exp_error"><span style="color: red;">Date expire should be month/year</span></div>
+          <label for="cvv">CVV</label>
+          <input autocomplete="off" type="text" id="cvv" name="cvv" class="input-lg form-control cvv" autocomplete="cvv" placeholder="3 digit number" pattern="^[1-9]{3,0}">
+          <div id="cvv_error"><span style="color: red;">CCV is 3 legit number behind the card</span></div>
+          <label>
+        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+      </label>
+      <div id="correctForm" onsubmit="return false" class = "error"></div>
+      <button type="submit" value="Continue to checkout" class="btn">Payment</button>
+    </form>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/products.js"></script>
+<script src="js/glass_product.js"></script>
+<script src="js/searchProduct.js"></script> 
+<script src="js/index.js"></script>
+
+<script type="text/javascript">
+    function validate() {
+        var input_text = document.getElementById("email");
+        if (input_text.value == ""){
+            alert("Please input your email.");
+            return false;
+        }
+        alert("Submitting form, thank you!");
+        return false;
+    }
+    </script>
+
+
+      
+</body>
+</html>

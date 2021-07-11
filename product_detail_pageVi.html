@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyeonic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Eyeonic Store - Group 2- T1.2103.M0" name="keywords">
+        <meta content="Eyeonic Store - Group 2- T1.2103.M0" name="description">
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="bootstrap//css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="images/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="images/favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_product.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body onload="javascript:getPageUrlId(),productsDetailVi(),Carousel(),addCart()">
+    <div class="container">
+        <div class="nav">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+                    <a href="#" class="navbar-brand">Danh Mục</a>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#cart"><img src="img/cart.png" alt="" width="30px" height="30px"> (<span class="total-count"></span>)</button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kính Mát</a>
+                                <div class="dropdown-menu">
+                                    <a href="glass_brand.html?key1=g" class="dropdown-item">Gucci</a>
+                                    <a href="glass_brand.html?key1=k" class="dropdown-item">Calvin klein</a>
+                                    <a href="glass_brand.html?key1=l" class="dropdown-item">Lacoste</a>
+                                    <a href="glass_brand.html?key1=n" class="dropdown-item">Nike</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kính Áp Tròng</a>
+                                <div class="dropdown-menu">
+                                    <a href="brand.html?key1=a" class="dropdown-item">AirOptix</a>
+                                    <a href="brand.html?key1=c" class="dropdown-item">ChromaView</a>
+                                    <a href="brand.html?key1=e" class="dropdown-item">EyesFusion</a>
+                                    <a href="brand.html?key1=f" class="dropdown-item">FreshLook</a>
+                                </div>
+                            </div>
+                            <a href="ServicePage.html" class="nav-item nav-link">Dịch Vụ</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Liên Hệ</a>
+                                <div class="dropdown-menu">
+                                    <a href="AboutUs.html" class="dropdown-item">Về Chúng Tôi</a>
+                                    <a href="ContactPage.html" class="dropdown-item">Cửa Hàng Chúng Tôi</a>
+                                </div>
+                            </div>            
+                            <a href="login.html" class="nav-item nav-link">Đăng Nhập | Đăng Ký</a>               
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+     <!--Searching Bar Start-->
+     <div class="container">
+        <div class="searching row" style="background-image: url('image/panel/lol.jpg'); width: 100%;height:100%;background-size: 100% 100%;">
+            <img src="image\panel\Eyeconic_Logo.svg" alt="" style="width: 30%;margin: auto;">
+            <div class="searching-box">
+            <input autocompleted type="text" id="search" class="search-input" placeholder="Tìm Thông Tin Sản Phẩm">
+            <button class ="search-btn"onclick="searchP()" title="">Tìm Kiếm</button>
+            <button class ="search-btn"onclick="clearSearch()" title="">Xóa</button>
+            </div>
+        </div>
+    </div>
+    <div id="searchProduct"></div>
+    </div>
+    <!----SearchingBar end-->
+            <div class="dropdown" style="float:right;margin-right: 100px;">
+                <a href="" data-toggle="dropdown">Ngôn Ngữ<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="languageEngProductsL()">English</a></li>
+                    <li><a href="#" onclick="languageViProductsL()">Tiếng Việt</a></li>
+                </ul>
+                </div>
+
+
+        <div class="container">
+        <div id="get_data">
+        </div>
+
+        
+        <div class="row" id="similarProduct"></div>
+        </div>
+    </div>
+
+    <div class="container other_brand">
+        <h1>Thương Hiệu Yêu Thích</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                <a href="brand.html?key1=a"><img src="images/Airoptix/airoptix-01.png" style="width: 100%;height: auto;" alt=""></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                <a href="brand.html?key1=c"><img src="images/Chromaview/Chromaview-01-01.png" style="width: 100%;height: auto;" alt=""></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                <a href="brand.html?key1=e"><img src="images/Eyefusion/Eyefusion-01.png" style="width: 100%;height: auto;" alt=""></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                <a href="brand.html?key1=f"><img src="images/Freshlook/freshlook-01.png" style="width: 100%;height: auto;" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container">
+        <div class="footer">       
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Liên Lạc Chúng Tôi</h2>
+                            <div class="contact-info">
+                                <p>MON-FRI 9AM - 5PM</p>
+                                <p><i class="fa fa-map-marker"></i>123 Eyeonic Store, L A, Vietnam</p>
+                                <p><i class="fa fa-envelope"></i>: eyeonicstore@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>: 1.800.556.926</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Theo Dõi Chúng Tôi</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Thông Tin Công Ty</h2>
+                            <ul>
+                                <li><a href="AboutUs.html">Về Chúng Tôi</a></li>
+                                <li><a href="ContactPage.html">Cửa Hàng Chúng Tôi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Services</h2>
+                            <ul>
+                                <li><a href="Virtualshop.html">Mua Sắm Trực Tuyến</a></li>
+                                <li><a href="Optionshop.html">Lựa Chọn Mua Sắm</a></li>
+                                <li><a href="Promises.html">Cam Kết</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                        <div class="payment-method">
+                            <h2>Chúng Tôi Chấp Nhận Thanh Toán:</h2>
+                            <img src="img/payment-method.png" alt="Payment Method" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="payment-security">
+                            <h2>Bảo Mật Bằng:</h2>
+                            <img src="img/godaddy.svg" alt="Payment Security" />
+                            <img src="img/norton.svg" alt="Payment Security" />
+                            <img src="img/ssl.svg" alt="Payment Security" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 copyright">
+                            <p  style="text-align: center;">Copyright &copy; By Group 2 Class T1-M0-2103. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- Footer End -->
+
+  <!-- Form -->
+    <!-- Form -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Shopping Cart</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart col-xs-12 col-12">
+                
+              </table>
+              <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer" onsubmit="return false">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" onclick ="openForm()" class="btn btn-primary">Order now</button>
+              <button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
+          </div>
+        </div>
+    
+          <!-- Form -->
+        <div class="container-order"  id="form" style="margin-left: 10%;">
+        <form class = "order-form" action="index.html" id="paymentform" onsubmit="return validatedPaymentForm()"> 
+          <div class="row">
+            <div class="col-50">
+                <button class="closeform" onclick="closeForm()" style="width:25px;cursor: pointer;">X</button>
+              <h3>Billing Address</h3>
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+              <label for="ccnum">Credit card number</label>
+              <input autocomplete="off" type="text" id="ccnum" name="cardnumber" class="input-lg form-control ccnum" placeholder="1111-2222-3333-4444" pattern="^[1-9]{12,0}">
+              <div id="cardnumber_error"><span style="color: red;">Card Number should have 12 number</span></div>
+              <label for="expmonth">Expire Day</label>
+              <input autocomplete="off" type="text" id="expmonth" name="expmonth" class="input-lg form-control expmonth" autocomplete="expmonth" placeholder="**/**" pattern="^[1-9]{2,0}/[1-9]{2,0}">
+              <div id="exp_error"><span style="color: red;">Date expire should be month/year</span></div>
+              <label for="cvv">CVV</label>
+              <input autocomplete="off" type="text" id="cvv" name="cvv" class="input-lg form-control cvv" autocomplete="cvv" placeholder="3 digit number" pattern="^[1-9]{3,0}">
+              <div id="cvv_error"><span style="color: red;">CCV is 3 legit number behind the card</span></div>
+              <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <div id="correctForm" onsubmit="return false" class = "error"></div>
+          <button type="submit" value="Continue to checkout" class="btn">Payment</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/glass_product.js"></script>
+    <script src="js/zoomsl.min.js"></script> 
+    <script src="js/searchProduct.js"></script> 
+    <script src="js/index.js"></script>
+</body>
+</html>
