@@ -2261,7 +2261,7 @@ function searchProductVi()
         var output = "";
         for(var i in cartArray) {
           output += "<tr>"
-            + "<td>"+"<img src='" + cartArray[i].pic + "' alt='' style='width:90%;border-radius:50%'>"+"</td>"
+            + "<td>"+"<img src='" + cartArray[i].pic + "' alt='' style='width:50%;border-radius:50%'>"+"</td>"
             + "<td>" + cartArray[i].name + "</td>" 
             + "<td>($" + cartArray[i].price + ")</td>"
             + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name='" + cartArray[i].name + "'>-</button>"
@@ -2269,7 +2269,7 @@ function searchProductVi()
             + "<button class='plus-item btn btn-primary input-group-addon' data-name='" + cartArray[i].name + "'>+</button></div></td>"
             + "<td><button class='delete-item btn btn-danger' data-name='" + cartArray[i].name + "'>X</button></td>"
             + " = " 
-            + "<td>" + cartArray[i].total + "</td>" 
+//             + "<td>" + cartArray[i].total + "</td>" 
             +  "</tr>";
         }
         $('.show-cart').html(output);
