@@ -2139,14 +2139,14 @@ function searchProductVi()
           for(var item in cart) {
             if(cart[item].name === name) {
               cart[item].count ++;
-              saveCart();
-              return loadCart();
+              saveCart()++;
+              return;
             }
           }
           var item = new Item(name, price, count, pic);
           cart.push(item);
-          saveCart();
-          return loadCart();
+          saveCart()++;
+          return loadCart()++;
         }
         // Set count from item
         obj.setCountForItem = function(name, count) {
