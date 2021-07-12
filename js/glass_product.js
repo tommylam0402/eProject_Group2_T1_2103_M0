@@ -1242,12 +1242,12 @@ var shoppingCart = (function() {
       for(var item in cart) {
         if(cart[item].name === name) {
           cart[item].count ++;
-          saveCart()++;
+          saveCart();
           return;
         }
       }
       var item = new Item(name, price, count, img);
-      cart.push(item);
+      cart.push(item)++;
       saveCart()++;
       return loadCart()++;
     }
