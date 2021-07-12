@@ -2136,6 +2136,7 @@ function searchProductVi()
         
         // Add to cart
         obj.addItemToCart = function(name, price, count, pic) {
+            loadCart();
           for(var item in cart) {
             if(cart[item].name === name) {
               cart[item].count ++;
@@ -2150,6 +2151,7 @@ function searchProductVi()
         }
         // Set count from item
         obj.setCountForItem = function(name, count) {
+            loadCart();
           for(var i in cart) {
             if (cart[i].name === name) {
               cart[i].count = count;
@@ -2159,6 +2161,7 @@ function searchProductVi()
         };
         // Remove item from cart
         obj.removeItemFromCart = function(name) {
+            loadCart();
             for(var item in cart) {
               if(cart[item].name === name) {
                 cart[item].count --;
@@ -2173,6 +2176,7 @@ function searchProductVi()
       
         // Remove all items from cart
         obj.removeItemFromCartAll = function(name) {
+            loadCart();
           for(var item in cart) {
             if(cart[item].name === name) {
               cart.splice(item, 1);
@@ -2184,12 +2188,14 @@ function searchProductVi()
       
         // Clear cart
         obj.clearCart = function() {
+            loadCart();
           cart = [];
           saveCart();
         }
       
         // Count cart 
         obj.totalCount = function() {
+            loadCart();
           var totalCount = 0;
           for(var item in cart) {
             totalCount += cart[item].count;
@@ -2199,6 +2205,7 @@ function searchProductVi()
       
         // Total cart
         obj.totalCart = function() {
+            loadCart();
           var totalCart = 0;
           for(var item in cart) {
             totalCart += cart[item].price * cart[item].count;
@@ -2208,6 +2215,7 @@ function searchProductVi()
       
         // List cart
         obj.listCart = function() {
+            loadCart();
           var cartCopy = [];
           for(i in cart) {
             item = cart[i];
