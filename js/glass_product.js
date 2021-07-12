@@ -1243,12 +1243,13 @@ var shoppingCart = (function() {
         if(cart[item].name === name) {
           cart[item].count ++;
           saveCart();
-          return;
+          return loadCart();
         }
       }
       var item = new Item(name, price, count, img);
       cart.push(item);
       saveCart();
+      return loadCart();
     }
     // Set count from item
     obj.setCountForItem = function(name, count) {
